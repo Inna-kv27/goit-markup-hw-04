@@ -139,16 +139,16 @@ img {
 
 .one {
     background-color: #2E2F42;
-    align-items: center;
     background-image: linear-gradient( 
     rgba(46, 47, 66, 0.70),
     rgba(46, 47, 66, 0.70)), 
     url(../images/fon1.jpg);
+    max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    max-width: 1440рх;
+    margin: 0 auto;
 }
 
 .one-container {
@@ -182,9 +182,7 @@ img {
     min-width: 169px;
     gap: 10px;
     cursor: pointer;
-    transition-property: background-color, border-color;
-    transition-duration: 250ms, 0.3s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .one-button:hover,
@@ -325,6 +323,8 @@ img {
     height: 40px;
     border-radius: 50%;
     flex-shrink: 0;
+    justify-content: center;
+    gap: 24px;
 }
 
 .three-soc-link {
