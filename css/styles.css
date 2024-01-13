@@ -330,15 +330,14 @@ img {
 .three-soc-link {
     display: flex;
     background-color: #4D5AE5;
+    fill: #f4f4fd;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     width: 100%;
     height: 100%;
     padding: 12px;
-    transition-property: background-color, border-color;
-    transition-duration: 250ms, 0.3s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .three-soc-link:hover,
@@ -349,6 +348,7 @@ img {
 /*? ---------------PORTFOL------------- */
 
 .portfolio section {
+    background: #FFF;
 }
 
 .portfolio-titl {
@@ -370,17 +370,13 @@ img {
     row-gap: 48px;
 }
 
-
 .portfolio-item {
     max-width: 360px;
     width: calc((100% - 48px) / 3);
     border: 1px solid #E7E9FC;
     background: #FFF;
     border-top: none;
-    transition-property: transform, box-shadow;
-    transition-duration: 250ms, 0.3s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-item-paragraph {
@@ -402,15 +398,13 @@ img {
     position: absolute;
     display: flex;
     align-items: center;
-    padding: 0 32px;
+    padding: 40px 32px;
     top: 0;
-    background: #4D5AE5;
+    background-color: #4D5AE5;
     height: 100%;
+    width: 100%;
     transform: translateY(100%);
-    transition: transform 250ms linear;
-}
-
-.portfolio-paragraph-text {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
