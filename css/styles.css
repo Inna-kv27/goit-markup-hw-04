@@ -86,7 +86,7 @@ img {
     gap: 40px;
 }
 .header-nav-link {
-    color: #2E2F42;
+    color: #404BBF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -113,8 +113,7 @@ img {
     flex-shrink: 0;
     display: block;
     border-radius: 2px;
-    color: #404BBF;
-    background-color: #404BBF;
+    background: #404BBF;
     position: absolute;
     left: 0;
     bottom: -1px;
