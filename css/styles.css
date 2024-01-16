@@ -85,7 +85,8 @@ img {
     display: flex;
     gap: 40px;
 }
-.header-nav-link {
+
+.header-nav-studio {
     color: #404BBF;
     font-size: 16px;
     font-weight: 500;
@@ -98,14 +99,7 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
-.header-nav-link:hover,
-.header-nav-link:focus {
-    color: #404BBF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
+
 .active::after {
     content: "";
     width: 100%;
@@ -117,6 +111,29 @@ img {
     position: absolute;
     left: 0;
     bottom: -1px;
+}
+
+.header-nav-item {
+    color:  #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    transition-property: color;
+    transition-duration: 250ms, 0.3s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: #404BBF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .header-address {
@@ -157,16 +174,15 @@ img {
     rgba(46, 47, 66, 0.70)), 
     url(../images/fon1.jpg);
     max-width: 1440px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
     margin: 0 auto;
 }
 
 .one-container {
-    padding-top: 188px; 
-    padding-bottom: 188px;
+    padding: 188px 472px;
 }
 
 .one-title {
@@ -181,19 +197,20 @@ img {
 }
 
 .one-button {
+    display: inline-flex;
     padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    background: #4D5AE5;
-    border-radius: 4px;
-    display: block;
-    align-items: flex-start;
     margin: 0 auto;
     min-width: 169px;
-    gap: 10px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -349,7 +366,6 @@ img {
     border-radius: 50%;
     width: 100%;
     height: 100%;
-    padding: 12px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
@@ -378,7 +394,6 @@ img {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #e7e9fc;
     column-gap: 24px;
     row-gap: 48px;
 }
