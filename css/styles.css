@@ -290,11 +290,6 @@ img {
 }
 
 .three-cont {
-    display: flex;
-    width: 232px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -377,10 +372,8 @@ img {
 }
 
 .portfolio-item {
-    max-width: 360px;
     width: calc((100% - 48px) / 3);
     background: #FFF;
-    border-top: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
