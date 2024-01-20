@@ -157,11 +157,9 @@ img {
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-}
-
-.one-container {
     padding: 188px 472px;
 }
+
 
 .one-title {
     color: #FFF;
@@ -175,7 +173,7 @@ img {
 }
 
 .one-button {
-    display: inline-flex;
+    display: block;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
