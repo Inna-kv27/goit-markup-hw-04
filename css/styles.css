@@ -151,7 +151,6 @@ img {
     rgba(46, 47, 66, 0.70),
     rgba(46, 47, 66, 0.70)), 
     url(../images/fon1.jpg);
-/*!------тут max-width: 1440px; чи min-width:--*/
     max-width: 1440px;
     width: 100%;
     background-repeat: no-repeat;
@@ -178,7 +177,6 @@ img {
     padding: 16px 32px;
     border: none;
     align-items: flex-start;
-    gap: 10px;
     border-radius: 4px;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -196,8 +194,6 @@ img {
 .one-button:hover,
 .one-button:focus {
     background-color: #404BBF;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*? ------------------TWO---------------- */
@@ -218,8 +214,7 @@ img {
     height: 112px;
     border-radius: 4px;
     border: 1px solid #8E8F99;
-    background: #F4F4FD;
-    flex-direction: column;
+    background-color: #F4F4FD;
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
@@ -232,7 +227,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    max-width: 264px;
 }
 
 .two-text {
@@ -240,7 +234,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
 }
 
 /*! ---------------THREE---------------- */
@@ -257,7 +250,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin: 0 auto 72px;
+    margin-bottom: 72px;
 }
 
 .three-list {
@@ -271,22 +264,8 @@ img {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px
     rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     width: calc((100% - 24px * 3) / 4);
-    display: inline-flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    transition-property: background-color, border-color;
-    transition-duration: 250ms, 0.3s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.three-item:hover,
-.three-item:focus {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    transition-property: background-color, border-color;
-    transition-duration: 250ms, 0.3s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .three-cont {
@@ -325,7 +304,6 @@ img {
     width: calc((100% - 24px * 3) / 4);
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     flex-shrink: 0;
     
 }
